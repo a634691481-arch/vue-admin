@@ -16,10 +16,41 @@ interface WebAntdPreferencesExtension {
  * !!! 更改配置后请清空缓存，否则可能不生效
  */
 export const overridesPreferences = defineOverridesPreferences({
-  // overrides
+  
   app: {
     name: import.meta.env.VITE_APP_TITLE,
+    layout: 'header-sidebar-nav'
   },
+  widget: {
+    fullscreen: true, // 是否显示全屏按钮
+    globalSearch: true, // 是否显示全局搜索按钮
+    languageToggle: false, // 是否显示语言切换按钮
+    lockScreen: true, // 是否显示锁屏按钮
+    notification: false, // 是否显示通知按钮
+    refresh: true, // 是否显示刷新按钮
+    sidebarToggle: true, // 是否显示侧边栏折叠/展开按钮
+    themeToggle: true // 是否显示主题切换按钮（亮色/暗色模式）
+  },
+
+  breadcrumb: {
+    hideOnlyOne: true,
+    styleType: 'background'
+  },
+  navigation: {
+    styleType: 'plain'
+  },
+  tabbar: {
+    styleType: 'brisk'
+  },
+  theme: {
+    builtinType: 'deep-blue',
+    colorPrimary: 'hsl(211 91% 39%)',
+    mode: 'light',
+    radius: '0'
+  }
+
+
+
 });
 
 export const preferencesExtension =

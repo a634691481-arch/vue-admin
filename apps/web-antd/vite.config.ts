@@ -1,4 +1,5 @@
 import { defineConfig } from '@vben/vite-config';
+import { codeInspectorPlugin } from 'code-inspector-plugin'
 
 export default defineConfig(async () => {
   return {
@@ -15,6 +16,13 @@ export default defineConfig(async () => {
           },
         },
       },
+      plugins: [
+        codeInspectorPlugin({
+          bundler: 'vite',
+          hideDomPathAttr: true
+        }),
+      ],
+
     },
   };
 });

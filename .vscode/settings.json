@@ -1,4 +1,15 @@
 {
+  "workbench.colorCustomizations": {
+    "tab.activeBackground": "#339933",
+    "tab.activeForeground": "#ffffff",
+    "list.activeSelectionBackground": "#339933",
+    "list.activeSelectionForeground": "#ffffff",
+    "list.hoverBackground": "#339933",
+    "list.hoverForeground": "#ffffff",
+    "list.inactiveSelectionBackground": "#339933",
+    "list.inactiveSelectionForeground": "#ffffff"
+  },
+
   "tailwindCSS.experimental.configFile": "internal/tailwind-config/src/theme.css",
   "tailwindCSS.lint.suggestCanonicalClasses": "ignore",
   // workbench
@@ -47,34 +58,6 @@
     "source.fixAll.oxc": "explicit",
     "source.fixAll.stylelint": "explicit",
     "source.organizeImports": "never"
-  },
-  "editor.defaultFormatter": "oxc.oxc-vscode",
-  "[html]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
-  },
-  "[scss]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
-  },
-  "[vue]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
   },
 
   // extensions
@@ -180,28 +163,13 @@
   "stylelint.customSyntax": "postcss-html",
   "stylelint.snippet": ["css", "less", "postcss", "scss", "vue"],
 
-  "js/ts.tsdk.path": "node_modules/typescript/lib",
-  "js/ts.inlayHints.enumMemberValues.enabled": true,
-  "js/ts.preferences.preferTypeOnlyAutoImports": true,
-  "js/ts.preferences.includePackageJsonAutoImports": "on",
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "typescript.preferences.includePackageJsonAutoImports": "on",
 
-  "eslint.validate": [
-    "javascript",
-    "typescript",
-    "javascriptreact",
-    "typescriptreact",
-    "vue",
-    "html",
-    "markdown",
-    "json",
-    "jsonc",
-    "json5",
-    "yaml"
-  ],
+  "eslint.validate": ["javascript", "typescript", "javascriptreact", "typescriptreact", "vue", "html", "markdown", "json", "jsonc", "json5", "yaml"],
 
-  "tailwindCSS.experimental.classRegex": [
-    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
-  ],
+  "tailwindCSS.experimental.classRegex": [["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]],
 
   "github.copilot.enable": {
     "*": true,
@@ -212,11 +180,7 @@
 
   "cssVariables.lookupFiles": ["packages/@core/base/design/src/**/*.css"],
 
-  "i18n-ally.localesPaths": [
-    "packages/locales/src/langs",
-    "playground/src/locales/langs",
-    "apps/*/src/locales/langs"
-  ],
+  "i18n-ally.localesPaths": ["packages/locales/src/langs", "playground/src/locales/langs", "apps/*/src/locales/langs"],
   "i18n-ally.pathMatcher": "{locale}/{namespace}.{ext}",
   "i18n-ally.enabledParsers": ["json"],
   "i18n-ally.sourceLanguage": "en",
@@ -239,5 +203,13 @@
   },
   "commentTranslate.hover.enabled": false,
   "commentTranslate.multiLineMerge": true,
-  "vue.server.hybridMode": true
+  "vue.server.hybridMode": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "python-envs.pythonProjects": [
+    {
+      "path": "apps/web-antd",
+      "envManager": "ms-python.python:venv",
+      "packageManager": "ms-python.python:pip"
+    }
+  ]
 }
