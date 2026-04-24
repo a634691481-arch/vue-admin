@@ -42,6 +42,7 @@
     "@vben/utils": "workspace:*",
     "@vueuse/core": "catalog:",
     "ant-design-vue": "catalog:",
+    "code-inspector-plugin": "^1.5.1",
     "dayjs": "catalog:",
     "pinia": "catalog:",
     "vue": "catalog:",

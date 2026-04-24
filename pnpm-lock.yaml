@@ -54,9 +54,6 @@ catalogs:
     '@manypkg/get-packages':
       specifier: ^3.1.0
       version: 3.1.0
-    '@nolebase/vitepress-plugin-git-changelog':
-      specifier: ^2.18.2
-      version: 2.18.2
     '@playwright/test':
       specifier: ^1.59.1
       version: 1.59.1
@@ -153,9 +150,6 @@ catalogs:
     '@vee-validate/zod':
       specifier: ^4.15.1
       version: 4.15.1
-    '@vite-pwa/vitepress':
-      specifier: ^1.1.0
-      version: 1.1.0
     '@vitejs/plugin-vue':
       specifier: ^6.0.6
       version: 6.0.6
@@ -180,9 +174,6 @@ catalogs:
     ant-design-vue:
       specifier: ^4.2.6
       version: 4.2.6
-    antdv-next:
-      specifier: ^1.1.9
-      version: 1.1.9
     archiver:
       specifier: ^7.0.1
       version: 7.0.1
@@ -240,9 +231,6 @@ catalogs:
     echarts:
       specifier: ^6.0.0
       version: 6.0.0
-    element-plus:
-      specifier: ^2.13.7
-      version: 2.13.7
     es-toolkit:
       specifier: ^1.45.1
       version: 1.45.1
@@ -318,12 +306,6 @@ catalogs:
     lucide-vue-next:
       specifier: ^0.577.0
       version: 0.577.0
-    medium-zoom:
-      specifier: ^1.1.0
-      version: 1.1.0
-    naive-ui:
-      specifier: ^2.44.1
-      version: 2.44.1
     nitropack:
       specifier: ^2.13.3
       version: 2.13.3
@@ -426,9 +408,6 @@ catalogs:
     tailwindcss:
       specifier: ^4.2.2
       version: 4.2.2
-    tdesign-vue-next:
-      specifier: ^1.19.0
-      version: 1.19.0
     theme-colors:
       specifier: ^0.1.0
       version: 0.1.0
@@ -450,9 +429,6 @@ catalogs:
     unplugin-dts:
       specifier: ^1.0.0-beta.6
       version: 1.0.0-beta.6
-    unplugin-element-plus:
-      specifier: ^0.11.2
-      version: 0.11.2
     unplugin-vue:
       specifier: ^7.1.1
       version: 7.1.1
@@ -474,12 +450,6 @@ catalogs:
     vite-plugin-vue-devtools:
       specifier: ^8.1.1
       version: 8.1.1
-    vitepress:
-      specifier: ^1.6.4
-      version: 1.6.4
-    vitepress-plugin-group-icons:
-      specifier: ^1.7.3
-      version: 1.7.3
     vitest:
       specifier: ^4.1.4
       version: 4.1.4
@@ -703,6 +673,9 @@ importers:
       ant-design-vue:
         specifier: 'catalog:'
         version: 4.2.6(vue@3.5.32(typescript@6.0.2))
+      code-inspector-plugin:
+        specifier: ^1.5.1
+        version: 1.5.1
       dayjs:
         specifier: 'catalog:'
         version: 1.11.20
@@ -2930,6 +2903,24 @@ packages:
   '@cloudflare/kv-asset-handler@0.4.2':
     resolution: {integrity: sha512-SIOD2DxrRRwQ+jgzlXCqoEFiKOFqaPjhnNTGKXSRLvp1HiOvapLaFG2kEr9dYQTYe8rKrd9uvDUzmAITeNyaHQ==}
     engines: {node: '>=18.0.0'}
+
+  '@code-inspector/core@1.5.1':
+    resolution: {integrity: sha512-Y9JdgoxVh93xRMupTa1lT/v+UlcBEpM7Y1BTxQy924wSe6VVEXsJ1nPJ/Ob2HPMUAA6F568aHALi2KDUhA2kzg==}
+
+  '@code-inspector/esbuild@1.5.1':
+    resolution: {integrity: sha512-Z/WZVCG6WaB9HTcDC8l15RpgEsfFj/WKLLr6cKNX/JzAYBroadLPw1N0sbUJUIQnow5cCo7KYpHrC1T27WVMnw==}
+
+  '@code-inspector/mako@1.5.1':
+    resolution: {integrity: sha512-EQmqQnnyW8tf3EBRlYyRYv1n3W1PUcfaYuuXXAfBdfJIGMwJjj0PcrDsdiI5MNyFmIx3QdMREhWmPMx1LoAANg==}
+
+  '@code-inspector/turbopack@1.5.1':
+    resolution: {integrity: sha512-PeLbcDtKDoSrKPsWnwQc+Yj9KgCa3xbHxEwXa/aGVykilvfvYP9AH1z5BRyZLDgB21diSV75BPNpF+o/FQRYug==}
+
+  '@code-inspector/vite@1.5.1':
+    resolution: {integrity: sha512-gkfmSmawYb1yDDuCft4DESXCAD3JxPt59dGiRoD78GhQzSYHk3tnLPZMH/GLBpdeFNbKHi1FtEMbAAECIJG9xg==}
+
+  '@code-inspector/webpack@1.5.1':
+    resolution: {integrity: sha512-8i3QI/bSirORDF/0P16T6NhNy1RxO7soip8sWeV/2btLbYCwyiaDnqT4Bw3JaM8MNz0N8NaA2qItUrrKE7TtCg==}
 
   '@commitlint/cli@20.5.0':
     resolution: {integrity: sha512-yNkyN/tuKTJS3wdVfsZ2tXDM4G4Gi7z+jW54Cki8N8tZqwKBltbIvUUrSbT4hz1bhW/h0CdR+5sCSpXD+wMKaQ==}
@@ -6568,6 +6559,10 @@ packages:
     resolution: {integrity: sha512-2bxTP2yUH7AJj/VAXfcA+4IcWGdQ87HwBANLt5XxGTeomo8yG0y95N1um9i5StvhT/Bl0/2cARA5v1PpPXUxUA==}
     engines: {node: '>=14.16'}
 
+  chalk@4.1.1:
+    resolution: {integrity: sha512-diHzdDKxcU+bAsUboHLPEDQiw0qEe0qd7SYUn3HgcFlWgbDcfLGswOHYeGrHKzG9z6UYf01d9VFMfZxPM1xZSg==}
+    engines: {node: '>=10'}
+
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
@@ -6673,6 +6668,9 @@ packages:
   cluster-key-slot@1.1.2:
     resolution: {integrity: sha512-RMr0FhtfXemyinomL4hrWcYJxmX6deFdCxpJzhDttxgO1+bcCnkk+9drydLVDmAMG7NE6aN/fl4F7ucU/90gAA==}
     engines: {node: '>=0.10.0'}
+
+  code-inspector-plugin@1.5.1:
+    resolution: {integrity: sha512-7gOqqBurKCucnls1ZHw0KWb7Z5u7gg3Q2pFSY9rrttFmwRaFJfJiscKEbm7X9IKmeEvkFRtNvNrHbSVQ67L8pQ==}
 
   color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
@@ -7149,6 +7147,10 @@ packages:
   dot-prop@9.0.0:
     resolution: {integrity: sha512-1gxPBJpI/pcjQhKgIU91II6Wkay+dLcN3M6rf2uwP8hRur3HtQXjVrdAK3sjC0piaEuxzMwjXChcETiJl47lAQ==}
     engines: {node: '>=18'}
+
+  dotenv@16.6.1:
+    resolution: {integrity: sha512-uBq4egWHTcTt33a72vpSG0z3HnPuIl6NqYcTrKEg2azoEyl2hpW0zqlxysq2pK9HlDIHyHyakeYaYnSAwd8bow==}
+    engines: {node: '>=12'}
 
   dotenv@17.4.1:
     resolution: {integrity: sha512-k8DaKGP6r1G30Lx8V4+pCsLzKr8vLmV2paqEj1Y55GdAgJuIqpRp5FfajGF8KtwMxCz9qJc6wUIJnm053d/WCw==}
@@ -8460,6 +8462,9 @@ packages:
     resolution: {integrity: sha512-7W0vV3rqv5tokqkBAFV1LbR7HPOWzXQDpDgEuib/aJ1jsZZx6x3c2mBI+TJhJzOhkGeaLbCKEHXEXLfirtG2JA==}
     engines: {node: '>=18'}
 
+  launch-ide@1.4.3:
+    resolution: {integrity: sha512-v2xMAarJOFy51kuesYEIIx5r4WHvsV+VLMU49K24bdiRZGUpo1ZulO1DRrLozM5BMbXUfRfrUTM2PbBfYCeA4Q==}
+
   lazystream@1.0.1:
     resolution: {integrity: sha512-b94GiNHQNy6JNTrt5w6zNyffMrNkXZb3KTkCZJb2V1xaEGCk093vkZ2jk3tpaeP33/OiXC+WvK9AxUebnf5nbw==}
     engines: {node: '>= 0.6.3'}
@@ -9338,6 +9343,10 @@ packages:
 
   popmotion@11.0.5:
     resolution: {integrity: sha512-la8gPM1WYeFznb/JqF4GiTkRRPZsfaj2+kCxqQgr2MJylMmIKUwBfWW8Wa5fml/8gmtlD5yI01MP1QCZPWmppA==}
+
+  portfinder@1.0.38:
+    resolution: {integrity: sha512-rEwq/ZHlJIKw++XtLAO8PPuOQA/zaPJOZJ37BVuN97nLpMJeuDVLVGRwbFoBgLudgdTMP2hdRJP++H+8QOA3vg==}
+    engines: {node: '>= 10.12'}
 
   possible-typed-array-names@1.1.0:
     resolution: {integrity: sha512-/+5VFTchJDoVj3bhoqi6UeymcD00DAwb1nJwamzPvHEszJ4FpF6SNNbUbOS8yI56qHzdV8eK0qEfOSiodkTdxg==}
@@ -12586,6 +12595,48 @@ snapshots:
       sisteransi: 1.0.5
 
   '@cloudflare/kv-asset-handler@0.4.2': {}
+
+  '@code-inspector/core@1.5.1':
+    dependencies:
+      '@vue/compiler-dom': 3.5.32
+      chalk: 4.1.2
+      dotenv: 16.6.1
+      launch-ide: 1.4.3
+      portfinder: 1.0.38
+    transitivePeerDependencies:
+      - supports-color
+
+  '@code-inspector/esbuild@1.5.1':
+    dependencies:
+      '@code-inspector/core': 1.5.1
+    transitivePeerDependencies:
+      - supports-color
+
+  '@code-inspector/mako@1.5.1':
+    dependencies:
+      '@code-inspector/core': 1.5.1
+    transitivePeerDependencies:
+      - supports-color
+
+  '@code-inspector/turbopack@1.5.1':
+    dependencies:
+      '@code-inspector/core': 1.5.1
+      '@code-inspector/webpack': 1.5.1
+    transitivePeerDependencies:
+      - supports-color
+
+  '@code-inspector/vite@1.5.1':
+    dependencies:
+      '@code-inspector/core': 1.5.1
+      chalk: 4.1.1
+    transitivePeerDependencies:
+      - supports-color
+
+  '@code-inspector/webpack@1.5.1':
+    dependencies:
+      '@code-inspector/core': 1.5.1
+    transitivePeerDependencies:
+      - supports-color
 
   '@commitlint/cli@20.5.0(@types/node@25.6.0)(conventional-commits-parser@6.4.0)(typescript@6.0.2)':
     dependencies:
@@ -16005,6 +16056,11 @@ snapshots:
     dependencies:
       chalk: 5.6.2
 
+  chalk@4.1.1:
+    dependencies:
+      ansi-styles: 4.3.0
+      supports-color: 7.2.0
+
   chalk@4.1.2:
     dependencies:
       ansi-styles: 4.3.0
@@ -16132,6 +16188,18 @@ snapshots:
   clsx@2.1.1: {}
 
   cluster-key-slot@1.1.2: {}
+
+  code-inspector-plugin@1.5.1:
+    dependencies:
+      '@code-inspector/core': 1.5.1
+      '@code-inspector/esbuild': 1.5.1
+      '@code-inspector/mako': 1.5.1
+      '@code-inspector/turbopack': 1.5.1
+      '@code-inspector/vite': 1.5.1
+      '@code-inspector/webpack': 1.5.1
+      chalk: 4.1.1
+    transitivePeerDependencies:
+      - supports-color
 
   color-convert@2.0.1:
     dependencies:
@@ -16604,6 +16672,8 @@ snapshots:
   dot-prop@9.0.0:
     dependencies:
       type-fest: 4.41.0
+
+  dotenv@16.6.1: {}
 
   dotenv@17.4.1: {}
 
@@ -18093,6 +18163,11 @@ snapshots:
     dependencies:
       package-json: 10.0.1
 
+  launch-ide@1.4.3:
+    dependencies:
+      chalk: 4.1.2
+      dotenv: 16.6.1
+
   lazystream@1.0.1:
     dependencies:
       readable-stream: 2.3.8
@@ -19059,6 +19134,13 @@ snapshots:
       hey-listen: 1.0.8
       style-value-types: 5.1.2
       tslib: 2.4.0
+
+  portfinder@1.0.38:
+    dependencies:
+      async: 3.2.6
+      debug: 4.4.3
+    transitivePeerDependencies:
+      - supports-color
 
   possible-typed-array-names@1.1.0: {}
 
