@@ -289,12 +289,17 @@ import { useAuthStore } from '#/store';
 
 ### 通用组件 (references/components/common/)
 
-- **数字动画**: `references/components/common/count-to.md` - CountToAnimator数字滚动动画
+- **数字动画**: `references/components/common/count-to.md` - CountTo数字滚动动画，支持自定义样式和过渡效果
 - **省略文本**: `references/components/common/ellipsis-text.md` - EllipsisText文本省略展开
+- **提示组件**: `references/components/common/tippy.md` - Tippy工具提示、指令/组件两种用法
+- **上下文菜单**: `references/components/common/context-menu.md` - ContextMenu右键菜单、图标、分割线、动态菜单项
+- **富文本编辑器**: `references/components/common/tiptap.md` - Tiptap富文本编辑器，内置工具栏和预览
 
 ### 功能配置 (references/features/)
 
 - **常用功能**: `references/features/features.md` - 水印、缓存、动态标题等
+- **文件下载**: `references/features/file-download.md` - URL/Blob/Base64/图片多种下载方式
+- **剪切板**: `references/features/clipboard.md` - 复制/读取剪贴板内容
 
 ### 构建部署 (references/deployment/)
 
